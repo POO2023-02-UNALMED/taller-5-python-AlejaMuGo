@@ -7,7 +7,7 @@ class Pez(Animal):
         super().__init__(nombre,edad,habitat,genero)
         self._colorEscamas=colorEscamas
         self._cantidadAletas=cantidadAletas
-        Pez._listado.append(self)
+        Pez._listado.append(1)
     @classmethod
     def cantidadPeces(cls):
         return len(Pez._listado)
