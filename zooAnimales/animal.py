@@ -11,11 +11,11 @@ class Animal:
         return "desplazarse"
     @classmethod
     def totalPorTipo(cls):
-        from mamifero import Mamifero
-        from ave import Ave
-        from pez import Pez
-        from reptil import Reptil
-        from anfibio import Anfibio
+        from zooAnimales.mamifero import Mamifero
+        from zooAnimales.ave import Ave
+        from zooAnimales.pez import Pez
+        from zooAnimales.reptil import Reptil
+        from zooAnimales.anfibio import Anfibio
         return "Mamiferos: "+Mamifero.cantidadMamiferos()+"\n"+"Aves: "+Ave.cantidadAves()+"\n"+"Reptiles: "+Reptil.cantidadReptiles()+"\n"+"Peces: "+Pez.cantidadPeces()+"\n"+"Anbibios: "+Anfibio.cantidadAnbibios()
     def toString(self):
         if self._zona == None:
