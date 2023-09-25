@@ -13,12 +13,12 @@ class Pez(Animal):
         return Pez._listado.length
     def movimiento(self):
         return "nadar"
-    def crearSalmon(self,nombre,edad,genero):
-        salmon = Pez.__init__(self,nombre,edad,"oceano",genero,"rojo",6)
+    def crearSalmon(nombre,edad,genero):
+        salmon = Pez(nombre,edad,"oceano",genero,"rojo",6)
         salmones+=1
         return salmon
-    def crearBacalao(self,nombre,edad,genero):
-        bacalao = Pez.__init__(self,nombre,edad,"oceano",genero,"gris",6)
+    def crearBacalao(nombre,edad,genero):
+        bacalao = Pez(nombre,edad,"oceano",genero,"gris",6)
         bacalaos+=1
         return bacalao
     def getColorEscamas(self):
