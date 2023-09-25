@@ -13,13 +13,11 @@ class Reptil(Animal):
         return Reptil._listado.length
     def movimiento(self):
         return "reptar"
-    @classmethod
-    def crearIguana(cls,nombre,edad,genero):
+    def crearIguana(nombre,edad,genero):
         iguana = Reptil.__init__(nombre,edad,"humedal",genero,"verde",3)
         iguanas+=1
         return iguana
-    @classmethod
-    def crearSerpiente(cls,nombre,edad,genero):
+    def crearSerpiente(nombre,edad,genero):
         snake = Reptil.__init__(nombre,edad,"jungla",genero,"blanco",1)
         serpientes+=1
         return snake
