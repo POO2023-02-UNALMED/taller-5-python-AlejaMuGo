@@ -15,11 +15,11 @@ class Pez(Animal):
         return "nadar"
     def crearSalmon(nombre,edad,genero):
         salmon = Pez(nombre,edad,"oceano",genero,"rojo",6)
-        salmones+=1
+        Pez.salmones+=1
         return salmon
     def crearBacalao(nombre,edad,genero):
         bacalao = Pez(nombre,edad,"oceano",genero,"gris",6)
-        bacalaos+=1
+        Pez.bacalaos+=1
         return bacalao
     def getColorEscamas(self):
         return self._colorEscamas

@@ -13,11 +13,11 @@ class Mamifero(Animal):
         return Mamifero._listado.length
     def crearCaballo(nombre,edad,genero):
         horse = Mamifero(nombre,edad,"pradera",genero,True,4)
-        caballos+=1
+        Mamifero.caballos+=1
         return horse
     def crearLeon(nombre,edad,genero):
         lion = Mamifero(nombre,edad,"selva",genero,True,4)
-        leones+=1
+        Mamifero.leones+=1
         return lion
     def getPatas(self):
         return self._patas

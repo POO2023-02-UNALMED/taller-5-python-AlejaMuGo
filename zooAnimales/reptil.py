@@ -15,11 +15,11 @@ class Reptil(Animal):
         return "reptar"
     def crearIguana(nombre,edad,genero):
         iguana = Reptil(nombre,edad,"humedal",genero,"verde",3)
-        iguanas+=1
+        Reptil.iguanas+=1
         return iguana
     def crearSerpiente(nombre,edad,genero):
         snake = Reptil(nombre,edad,"jungla",genero,"blanco",1)
-        serpientes+=1
+        Reptil.serpientes+=1
         return snake
     def getColorEscamas(self):
         return self._colorEscamas

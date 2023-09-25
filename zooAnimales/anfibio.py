@@ -15,11 +15,11 @@ class Anfibio(Animal):
         return "saltar"
     def crearRana(nombre,edad,genero):
         frog = Anfibio(nombre,edad,"selva",genero,"rojo",True)
-        ranas+=1
+        Anfibio.ranas+=1
         return frog
     def crearSalamandra(nombre,edad,genero):
         salamandra = Anfibio(nombre,edad,"selva",genero,"negro y amarillo",False)
-        salamandras+=1
+        Anfibio.salamandras+=1
         return salamandra
     def getColorPiel(self):
         return self._colorPiel
