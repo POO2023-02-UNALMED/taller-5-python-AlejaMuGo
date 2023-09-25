@@ -9,7 +9,7 @@ class Ave(Animal):
         Ave._listado.append(self)
     @classmethod
     def cantidadAves(cls):
-        return Ave._listado.length
+        return len(Ave._listado)
     def movimiento(self):
         return "volar"
     def crearHalcon(nombre,edad,genero):

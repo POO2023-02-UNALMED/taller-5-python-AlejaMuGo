@@ -10,7 +10,7 @@ class Mamifero(Animal):
         Mamifero._listado.append(self)
     @classmethod
     def cantidadMamiferos(cls):
-        return Mamifero._listado.length
+        return len(Mamifero._listado)
     def crearCaballo(nombre,edad,genero):
         horse = Mamifero(nombre,edad,"pradera",genero,True,4)
         Mamifero.caballos+=1

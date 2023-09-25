@@ -10,7 +10,7 @@ class Anfibio(Animal):
         Anfibio._listado.append(self)
     @classmethod
     def cantidadAnfibios(cls):
-        return Anfibio._listado.length
+        return len(Anfibio._listado)
     def movimiento(self):
         return "saltar"
     def crearRana(nombre,edad,genero):
