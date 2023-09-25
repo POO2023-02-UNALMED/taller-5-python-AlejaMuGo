@@ -12,12 +12,12 @@ class Ave(Animal):
         return Ave._listado.length
     def movimiento(self):
         return "volar"
-    def crearHalcon(nombre,edad,genero):
-        halcon = Ave.__init__(nombre,edad,"montanas",genero,"cafe glorioso")
+    def crearHalcon(self,nombre,edad,genero):
+        halcon = Ave.__init__(self,nombre,edad,"montanas",genero,"cafe glorioso")
         halcones+=1
         return halcon
-    def crearAguila(nombre,edad,genero):
-        aguila = Ave.__init__(nombre,edad,"montanas",genero,"blanco y amarillo")
+    def crearAguila(self,nombre,edad,genero):
+        aguila = Ave.__init__(self,nombre,edad,"montanas",genero,"blanco y amarillo")
         aguilas+=1
         return aguila
     def getColorPlumas(self):

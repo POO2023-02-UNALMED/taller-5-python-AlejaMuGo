@@ -13,12 +13,12 @@ class Anfibio(Animal):
         return Anfibio._listado.length
     def movimiento(self):
         return "saltar"
-    def crearRana(nombre,edad,genero):
-        frog = Anfibio.__init__(nombre,edad,"selva",genero,"rojo",True)
+    def crearRana(self,nombre,edad,genero):
+        frog = Anfibio.__init__(self,nombre,edad,"selva",genero,"rojo",True)
         ranas+=1
         return frog
-    def crearSalamandra(nombre,edad,genero):
-        salamandra = Anfibio.__init__(nombre,edad,"selva",genero,"negro y amarillo",False)
+    def crearSalamandra(self,nombre,edad,genero):
+        salamandra = Anfibio.__init__(self,nombre,edad,"selva",genero,"negro y amarillo",False)
         salamandras+=1
         return salamandra
     def getColorPiel(self):
