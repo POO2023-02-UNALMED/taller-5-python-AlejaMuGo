@@ -10,7 +10,7 @@ class Reptil(Animal):
         Reptil._listado.append(self)
     @classmethod
     def cantidadReptiles(cls):
-        return len(Reptil._listado)
+        return len(cls._listado)
     def movimiento(self):
         return "reptar"
     def crearIguana(nombre,edad,genero):
